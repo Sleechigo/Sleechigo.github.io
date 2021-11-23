@@ -14,17 +14,16 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <title>Lecture 2.7</title>
+  <title>Loop in Javascript</title>
 </head>
 
 <body>
   <script>
     const npcs = [];
-    
+    for(let i=0; i < 10; ){
     npcs.push(createNPC());
-    npcs.push(createNPC());
-    npcs.push(createNPC());
-    
+    i++;
+    }
     function createNPC(){
       const weapons = ["sword", "pistol", "axe", "spear"];
       const weapon = weapons[Math.floor(Math.random() * weapons.length)];

@@ -14,12 +14,27 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <title>Lecture 2.6</title>
+  <title>objects in javascript</title>
 </head>
 
 <body>
   <script>
+    const npcs = [];
+
+    npcs.push(createNPC());
+    npcs.push(createNPC());
+    npcs.push(createNPC());
     //Place your code here
+    function createNPC(){
+      const power = Math.random() * 0.5 + 0.5;
+      const weapons = ["Sword", "pistol", "axe", "spear"];
+      const weapon = weapons[Math.floor(Math.random()*weapons.length)];
+      const strength = Math.random()*0.2 + 1;
+      const damage = 0;
+    return {power, weapon, strength, damage};
+  
+  }
+    
   </script> 
 </body>
 

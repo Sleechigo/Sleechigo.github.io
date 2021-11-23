@@ -14,12 +14,43 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <title>Lecture 2.8</title>
+  <title>class in javascript</title>
 </head>
 
 <body>
     <script>
-      
+      class Point{
+        constructor(x, y){
+          this.x = x;
+          this.y = y;
+        }
+      }
+      const pt = new Point(20, 65);
+      const rt = new Point(30, 50);
+
+
+      class rectangle{
+        constructor(left, top, width, height){
+          this.left = left;
+          this.top = top;
+          this.width = width;
+          this.height = height;
+        }
+        get area(){
+          return this.width*this.height;
+        }
+
+        move(dx, dy){
+          this.left +=dx;
+          this.top +=dy;
+        }
+        overlap(rect){
+          const l1 = new Point()
+        }
+      }
+      const rect1 = new rectangle(10, 10, 100, 50);
+      const rect2 = new rectangle(50, 20, 200, 80);
+
     </script>
 </body>
 

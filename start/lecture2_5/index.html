@@ -20,12 +20,24 @@
       }  
   </style>
 
-  <title>Lecture 2.5</title>
+  <title>Lists in javascript</title>
 </head>
 
 <body>
    <script>
      //Place your code here
+     const planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus"];
+     planets.push("Krypton");
+     console.log("there are " + planets.length + " planets in our solar system");
+     console.log("Venus is out and it's remaining " + planets.length + " planets");
+    function month(){
+      const months = ["Janury", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      
+      const monthId = new Date().getMonth();
+
+      return months[monthId];
+
+    }
    </script> 
 </body>
 
