@@ -19,7 +19,13 @@
 
 <body>
     <script>
-     
+     fetch('./characters.json')
+     .then( response => response.json())
+     .then( obj => {
+        obj.array.forEach(character => {
+          console.log( character );
+        });
+     })
     </script>
 </body>
 
